@@ -36,7 +36,9 @@ h1 {
   display: inline-block;
   border: 1px dotted darkgray;
 }
-
+.color:hover {
+  border: 2px solid darkgray;
+}
 .box {
   width: 38px;
   height: 38px;
