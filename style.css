@@ -4,7 +4,7 @@ body {
 }
 
 h1 {
-  font-family: 'Press Start 2P', cursive;
+  font-family: 'Finger Paint', cursive;
   font-weight: normal;
   font-size: 36px;
   margin-top: 30px;
@@ -16,7 +16,7 @@ h1 {
 	height:50px;
 	background-color:whitesmoke;
 	margin:auto;
-	border-radius:20px;
+	border-radius:10px;
 }
 
 #canvas {
@@ -25,7 +25,7 @@ h1 {
   background-color: whitesmoke;
   margin: auto;
   margin-top: 20px;
-  border-radius:5px;
+  border-radius:10px;
 }
 
 .color {
@@ -44,11 +44,15 @@ h1 {
   border: 1px solid white;
   border-radius:5px;
 }
+.box:hover {
+  border: 1px solid darkgray;
+}
 
 button {
   padding: 5px;
   margin: 10px;
   font-size: 20px;
+  border-radius:10px;
 }
 
 #selected {
