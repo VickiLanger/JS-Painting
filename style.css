@@ -59,7 +59,7 @@ button {
   border-radius:10px;
 }
 
-.button:hover {
+button:hover {
   border: 3px solid darkgray;
 }
 
