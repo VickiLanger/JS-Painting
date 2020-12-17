@@ -1,0 +1,59 @@
+body {
+  background-image: url('abstract-2468874_1920.jpg');
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Press Start 2P', cursive;
+  font-weight: normal;
+  font-size: 36px;
+  margin-top: 30px;
+  color: whitesmoke;
+}
+
+.color-picker {
+	width:800px;
+	height:50px;
+	background-color:whitesmoke;
+	margin:auto;
+	border-radius:20px;
+}
+
+#canvas {
+  width: 800px;
+  height: 400px;
+  background-color: whitesmoke;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.color {
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  border-radius: 50%;
+  display: inline-block;
+  border: 1px dotted darkgray;
+}
+
+.box {
+  width: 38px;
+  height: 38px;
+  display: inline-block;
+  border: 1px solid lightgray;
+  border-radius:5px;
+}
+
+button {
+  padding: 5px;
+  margin: 10px;
+  font-size: 20px;
+}
+
+#selected {
+  margin-right: 35px;
+  border: 5px double black;
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+}
