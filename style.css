@@ -13,7 +13,7 @@ h1 {
 
 .color-picker {
 	width:800px;
-	height:50px;
+	height:60px;
 	background-color:whitesmoke;
 	margin:auto;
 	border-radius:10px;
@@ -34,10 +34,10 @@ h1 {
   margin: 5px;
   border-radius: 50%;
   display: inline-block;
-  border: 2px dotted lightgray;
+  border: 3px dotted whitesmoke;
 }
 .color:hover {
-  border: 2px solid darkgray;
+  border: 3px solid darkgray;
 }
 
 .box {
