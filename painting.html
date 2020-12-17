@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>Painting</title>
+        <link rel='stylesheet' href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <h1>Better than MS Paint</h1>
+      
+        <div class="color-picker">
+          <div class="color" id="selected"></div>
+          <div class="color" style="background-color:rgb(178, 34, 34);" onclick="changeColor(this);"></div>
+          <div class="color" style="background-color:darkblue;" onclick="changeColor(this);"></div>
+          <div class="color" style="background-color:rgb(199, 21, 133);" onclick="changeColor(this);"></div>
+          <div class="color" style="background-color:rgb(255, 99, 71);" onclick="changeColor(this);"></div>
+          <div class="color" style="background-color:rgb(255, 215, 0);" onclick="changeColor(this);"></div>
+          <div class="color" style="background-color:rgb(102, 51, 153);" onclick="changeColor(this);"></div>
+          <div class="color" style="background-color:rgb(50, 205, 50);" onclick="changeColor(this);"></div>
+          <div class="color" style="background-color:rgb(64, 224, 208);" onclick="changeColor(this);"></div>
+
+        </div>
+      <button onclick="clearCanvas();"> Erase All </button>
+
+        <div id="canvas">
+
+        </div>
+
+
+
+
+
+
+
+<script>
+  var canvas = document.getElementById('canvas');
+function addBoxes(){
+  for(var square = 0; square<200; square = square + 1) {
+    canvas.innerHTML += "<div class='box' onclick='paint(this);'></div>"
+  }
+  }
+  addBoxes();
+  
+  var selectedColor = "black";
+  
+  function paint(color){
+    color.style.backgroundColor = selectedColor;
+    color.style.borderColor = selectedColor;
+  }
+  
+  function changeColor(chosenColor){
+    selectedColor = chosenColor.style.backgroundColor;
+                document.getElementById('selected').style.backgroundColor = selectedColor;
+  }
+  
+  function clearCanvas(){
+    canvas.innerHTML = "";
+    addBoxes();
+  }
+      </script>
+
+    </body>
+</html>
