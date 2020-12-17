@@ -34,10 +34,10 @@ h1 {
   margin: 5px;
   border-radius: 50%;
   display: inline-block;
-  border: 1.5px dotted darkgray;
+  border: 2px dotted lightgray;
 }
 .color:hover {
-  border: 1.5px solid darkgray;
+  border: 2px solid darkgray;
 }
 
 .box {
